@@ -78,7 +78,7 @@
 
 	$main-nav-link: #707070;
 	$main-nav-link-active: #61366b;
-	$gold: #edb54c;
+	$gold: #deaf58;
 	
 	
 //`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-
@@ -87,7 +87,7 @@
 
 	@mixin borderLink($color:false){
 		border: 2px solid $gold;
-		padding: 10px 25px 10px 25px;
+		padding: 10px 25px 8px 25px;
 		font: normal 16px "Myriad Pro", "Myriad", sans-serif;
 		text-transform: uppercase;
 		text-decoration: none;

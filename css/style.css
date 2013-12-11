@@ -238,7 +238,15 @@ body { background: #000; }
 
 .float-left { float: left; position: relative; display: block; }
 
+.float-right { float: right; display: block; position: relative; }
+
 .clear-left { clear: left; }
+
+.gold-heading { color: #deaf58; font: normal 50px/58px "Futura Std Bold", "Futura Bold", "Futura", sans-serif; text-transform: uppercase; margin: 0px; padding: 0px; }
+
+.standard-p { font: normal 16px/22px "Myriad Pro", "Myriad", sans-serif; color: #fff; margin: 0px; padding: 0px; }
+
+.video { border: 1px solid #fff; -webkit-box-shadow: 0px 0px 10px black; -moz-box-shadow: 0px 0px 10px black; box-shadow: 0px 0px 10px black; }
 
 .primary-nav { background: #000; min-height: 55px; }
 .primary-nav .nav-center { text-align: center; float: left; position: relative; display: block; width: 980px; min-width: 200px !important; margin-left: -490px; left: 50%; }
@@ -255,10 +263,46 @@ body { background: #000; }
 .home-hero .hero-gutter { float: left; position: relative; display: block; width: 980px; min-width: 200px !important; margin-left: -490px; left: 50%; }
 .home-hero .logo { height: auto !important; float: left; position: relative; display: block; margin: 20px 0 0 0; padding: 0px; }
 .home-hero .tagline { color: #fff; margin: 0 0 0 20px; padding: 0; float: left; width: 600px; position: relative; clear: left; text-transform: uppercase; font: normal 60px/65px "Futura Std Bold", "Futura", sans-serif; }
-.home-hero .sub-tagline { float: left; position: relative; display: block; clear: left; width: 450px; font: italic 22px "Georgia", "Times", serif; color: #fff; margin: 20px 0 0 20px; padding: 0px; }
+.home-hero .sub-tagline { float: left; position: relative; display: block; clear: left; width: 430px; font: italic 22px/28px "Georgia", "Times", serif; color: #fff; margin: 20px 0 0 20px; padding: 0px; }
 .home-hero .sub-tagline sub { float: left; position: relative; clear: left; color: #666; margin: 10px 0 0 0; font: normal 16px "Myriad Pro", "Myriad", sans-serif; }
-.home-hero .learn-more { margin: 40px 0 0 20px; border: 2px solid #edb54c; padding: 10px 25px 10px 25px; font: normal 16px "Myriad Pro", "Myriad", sans-serif; text-transform: uppercase; text-decoration: none; color: #edb54c; -webkit-transition-property: all; transition-property: all; -webkit-transition-duration: 0.5s; animation-duration: 0.5s; }
+.home-hero .learn-more { margin: 40px 0 0 20px; border: 2px solid #deaf58; padding: 10px 25px 8px 25px; font: normal 16px "Myriad Pro", "Myriad", sans-serif; text-transform: uppercase; text-decoration: none; color: #deaf58; -webkit-transition-property: all; transition-property: all; -webkit-transition-duration: 0.5s; animation-duration: 0.5s; }
 .home-hero .learn-more:hover { border-color: #61366b; color: white; -webkit-box-shadow: 0px 0px 10px white; -moz-box-shadow: 0px 0px 10px white; box-shadow: 0px 0px 10px white; text-shadow: 0px 0px 10px #fff; }
+.home-hero .abs { position: absolute; left: 50%; display: block; bottom: 0px; }
+.home-hero .abs.phil { margin-left: 120px; z-index: 999; }
+.home-hero .abs.philippa { margin-left: 209px; bottom: -83px; }
+.home-hero .abs.duck { margin-left: 81px; z-index: 9999; }
+
+.accolades { min-height: 658px; background: #252525 url(/img/stars.jpg) center center no-repeat; -webkit-box-shadow: 0px 0px 200px #80478d; -moz-box-shadow: 0px 0px 200px #80478d; box-shadow: 0px 0px 200px #80478d; }
+.accolades .accolades-gutter { text-align: center; float: left; position: relative; display: block; width: 980px; min-width: 200px !important; margin-left: -490px; left: 50%; }
+.accolades .awards { width: 100%; display: inline-block; text-align: center; margin: 40px 0 0 0; padding: 0px; }
+.accolades .awards li { display: inline-block; position: relative; width: 180px; margin-left: 16px; vertical-align: top; }
+.accolades .awards li:first-child { margin-left: 0px !important; }
+.accolades .awards .branches { display: inline-block; }
+.accolades .awards .number { position: absolute; top: -9px; width: 180px; left: 50%; margin-left: -90px; font: normal 64px "Futura Std Bold", "Futura", sans-serif; color: #fff; }
+.accolades .awards .number.big-type { width: 100%; text-align: center; display: block; float: left; position: relative; margin: 12px 10px 0 0px; left: 0px; color: #deaf58; }
+.accolades .awards .type { margin: 10px 0 0 0; padding: 0px; color: #fff; font: bold 17px/20px "Myriad Pro", "Myriad", sans-serif; }
+.accolades .awards .type sub { color: #444; }
+.accolades .media-bank { margin-top: 60px; }
+.accolades .left-col { float: left; position: relative; display: block; width: 440px; text-align: left; }
+.accolades .left-col .gold-heading { float: left; width: 100%; display: block; }
+.accolades .left-col .standard-p { float: left; width: 100%; display: block; margin-top: 20px; }
+
+.testimonials { min-height: 480px; background: #313131 url(/img/tri-pattern.jpg) 0px 0px repeat; border-bottom: 1px solid #fff; }
+.testimonials .testimonials-gutter { float: left; position: relative; display: block; width: 980px; min-width: 200px !important; margin-left: -490px; left: 50%; }
+.testimonials .left-col { float: left; position: relative; display: block; width: 615px; }
+.testimonials .left-col .testimonials-ul { float: left; position: relative; display: block; margin: 0px; padding: 0px; }
+.testimonials .left-col .testimonials-ul li { float: left; position: relative; display: block; width: 276px; text-align: left; margin-right: 30px; }
+.testimonials .left-col .testimonials-ul li .quote { width: 100%; margin: 60px 0px 15px 0px; color: #deaf58; font: italic 22px/25px "Georgia", "Times", serif; float: left; position: relative; display: block; }
+.testimonials .left-col .testimonials-ul li .pic { float: left; position: relative; display: block; clear: left; height: auto !important; margin: 15px 0px 0px 0px; -webkit-border-radius: 70px; -moz-border-radius: 70px; border-radius: 70px; }
+.testimonials .left-col .testimonials-ul li .credit { display: table; }
+.testimonials .left-col .testimonials-ul li .credit .cred { display: table-cell; vertical-align: middle; text-align: left; width: 100%; padding-left: 10px; padding-top: 10px; color: #777; font: normal 14px/16px "Myriad Pro", "Myriad", sans-serif; }
+.testimonials .left-col .testimonials-ul li .credit .cred strong { text-transform: uppercase; color: #eee; }
+.testimonials .right-col { width: 350px; }
+.testimonials .right-col .gold-heading { float: left; position: relative; display: block; width: 100%; text-align: left; margin-top: 40px; }
+.testimonials .right-col .clients { margin-top: 15px; }
+.testimonials .right-col .clients ul { width: 45%; float: left; padding: 0px; margin: 0px 0px 0px 2%; }
+.testimonials .right-col .clients ul li { float: left; position: relative; display: block; color: #fff; width: 100%; padding: 2px 0px 2px 0px; font: normal 14px "Georgia", "Times", serif; }
+.testimonials .right-col .clients ul li strong { color: #deaf58; display: inline-block; margin-right: 5px; }
 
 /* jQuery FlexSlider v2.2.0 http://www.woothemes.com/flexslider/  Copyright 2012 WooThemes Free to use under the GPLv2 license. http://www.gnu.org/licenses/gpl-2.0.html  Contributing author: Tyler Smith (@mbmufffin) */
 /* Browser Resets
