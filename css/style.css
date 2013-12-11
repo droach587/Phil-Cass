@@ -236,7 +236,9 @@ body { background: #000; }
 
 .full-width { float: left; position: relative; display: block; width: 100%; }
 
-.float-lef { float: left; position: relative; display: block; }
+.float-left { float: left; position: relative; display: block; }
+
+.clear-left { clear: left; }
 
 .primary-nav { background: #000; min-height: 55px; }
 .primary-nav .nav-center { text-align: center; float: left; position: relative; display: block; width: 980px; min-width: 200px !important; margin-left: -490px; left: 50%; }
@@ -245,8 +247,18 @@ body { background: #000; }
 .primary-nav .primary-nav-links a:hover { color: #61366b; }
 .primary-nav .primary-nav-links li { display: inline-block; margin: 18px 20px 0 30px; }
 .primary-nav .heading-social { float: right; position: relative; display: block; text-align: right; }
-.primary-nav .heading-social a { display: inline-block; margin: 13px 0px 0px 20px; }
+.primary-nav .heading-social a { display: inline-block; margin: 13px 0px 0px 20px; -webkit-transition-property: all; transition-property: all; -webkit-transition-duration: 0.5s; animation-duration: 0.5s; }
+.primary-nav .heading-social a:hover { opacity: .7; }
 .primary-nav .heading-social img { height: auto !important; }
+
+.home-hero { background: #222222 url(/img/topmost-blurr-bg.jpg) top center repeat-x; min-height: 555px; }
+.home-hero .hero-gutter { float: left; position: relative; display: block; width: 980px; min-width: 200px !important; margin-left: -490px; left: 50%; }
+.home-hero .logo { height: auto !important; float: left; position: relative; display: block; margin: 20px 0 0 0; padding: 0px; }
+.home-hero .tagline { color: #fff; margin: 0 0 0 20px; padding: 0; float: left; width: 600px; position: relative; clear: left; text-transform: uppercase; font: normal 60px/65px "Futura Std Bold", "Futura", sans-serif; }
+.home-hero .sub-tagline { float: left; position: relative; display: block; clear: left; width: 450px; font: italic 22px "Georgia", "Times", serif; color: #fff; margin: 20px 0 0 20px; padding: 0px; }
+.home-hero .sub-tagline sub { float: left; position: relative; clear: left; color: #666; margin: 10px 0 0 0; font: normal 16px "Myriad Pro", "Myriad", sans-serif; }
+.home-hero .learn-more { margin: 40px 0 0 20px; border: 2px solid #edb54c; padding: 10px 25px 10px 25px; font: normal 16px "Myriad Pro", "Myriad", sans-serif; text-transform: uppercase; text-decoration: none; color: #edb54c; -webkit-transition-property: all; transition-property: all; -webkit-transition-duration: 0.5s; animation-duration: 0.5s; }
+.home-hero .learn-more:hover { border-color: #61366b; color: white; -webkit-box-shadow: 0px 0px 10px white; -moz-box-shadow: 0px 0px 10px white; box-shadow: 0px 0px 10px white; text-shadow: 0px 0px 10px #fff; }
 
 /* jQuery FlexSlider v2.2.0 http://www.woothemes.com/flexslider/  Copyright 2012 WooThemes Free to use under the GPLv2 license. http://www.gnu.org/licenses/gpl-2.0.html  Contributing author: Tyler Smith (@mbmufffin) */
 /* Browser Resets

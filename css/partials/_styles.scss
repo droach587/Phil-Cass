@@ -22,10 +22,14 @@ body{
 	width: 100%;
 }
 
-.float-lef{
+.float-left{
 	float: left;
 	position: relative;
 	display: block;
+}
+
+.clear-left{
+	clear: left;
 }
 
 .primary-nav{
@@ -64,10 +68,64 @@ body{
 		a{
 			display: inline-block;
 			margin: 13px 0px 0px 20px;
+			@include transAll();
+			&:hover{
+				opacity: .7;
+			}
 		}
 		img{
 			height: auto !important;
 		}
+	}
+}//Primary Nav
+
+.home-hero{
+	background: #222 url(/img/topmost-blurr-bg.jpg) top center repeat-x;
+	min-height: 555px;
+	.hero-gutter{
+		@include centerContainer(980,200);
+	}
+	.logo{
+		height: auto !important;
+		float: left;
+		position: relative;
+		display: block;
+		margin: 20px 0 0 0;
+		padding: 0px;
+	}
+	.tagline{
+		color: #fff;
+		margin: 0 0 0 20px;
+		padding: 0;
+		float: left;
+		width: 600px;
+		position: relative;
+		clear: left;
+		text-transform: uppercase;
+		font: normal 60px/65px "Futura Std Bold", "Futura", sans-serif;
+	}
+	.sub-tagline{
+		float: left;
+		position: relative;
+		display: block;
+		clear: left;
+		width: 450px;
+		font: italic 22px "Georgia", "Times", serif;
+		color: #fff;
+		margin:20px 0 0 20px;
+		padding: 0px;
+		sub{
+			float: left;
+			position: relative;
+			clear: left;
+			color: #666;
+			margin: 10px 0 0 0;
+			font: normal 16px "Myriad Pro", "Myriad", sans-serif;
+		}
+	}
+	.learn-more{
+		margin: 40px 0 0 20px;
+		@include borderLink();
 	}
 }
 

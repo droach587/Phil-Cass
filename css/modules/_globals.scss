@@ -78,13 +78,29 @@
 
 	$main-nav-link: #707070;
 	$main-nav-link-active: #61366b;
-
+	$gold: #edb54c;
 	
 	
 //`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-
 // Lower Level Button Mixins, reliant on upper level variables
 //`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-
 
+	@mixin borderLink($color:false){
+		border: 2px solid $gold;
+		padding: 10px 25px 10px 25px;
+		font: normal 16px "Myriad Pro", "Myriad", sans-serif;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: $gold;
+		@include transAll();
+		&:hover{
+			border-color: $main-nav-link-active;
+			color: lighten($main-nav-link-active,80%);
+			@include boxShadowMulti(0px 0px 10px #fff);
+			text-shadow: 0px 0px 10px #fff;
+		}
+	}
+	
 	@mixin transAll($speed:false){
 		-webkit-transition-property: all;
 	    transition-property: all;
