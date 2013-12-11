@@ -1,0 +1,76 @@
+//`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-
+// Default Style Sheet, mainly site confluent styles, used for 90%, non-responsive
+//`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-
+//`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-
+// Phil Cass, 2014 David Roach
+//`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-
+
+a, a:active, a:visited{
+	outline: none !important;
+	-moz-outline: none !important;
+	text-decoration: none !important;
+}
+
+body{ 
+	background: #000;
+}
+
+.full-width{
+	float:left;
+	position: relative;
+	display: block;
+	width: 100%;
+}
+
+.float-lef{
+	float: left;
+	position: relative;
+	display: block;
+}
+
+.primary-nav{
+	background: #000;
+	min-height: 55px;
+	.nav-center{
+		text-align: center;
+		@include centerContainer(980,200);
+	}
+	.primary-nav-links{
+		text-align: center;
+		display: block;
+		margin: 0px;
+		padding: 0px;
+		@include centerContainer(980,200);
+		a{
+			color: $main-nav-link;
+			font: normal 13px "Myriad Pro", "Myriad", sans-serif;
+			text-decoration: none;
+			text-transform: uppercase;
+			@include transAll();
+			&:hover{
+				color: $main-nav-link-active;
+			}
+		}
+		li{
+			display: inline-block;
+			margin: 18px 20px 0 30px;
+		}
+	}
+	.heading-social{
+		float: right;
+		position: relative;
+		display: block;
+		text-align: right;
+		a{
+			display: inline-block;
+			margin: 13px 0px 0px 20px;
+		}
+		img{
+			height: auto !important;
+		}
+	}
+}
+
+
+
+
