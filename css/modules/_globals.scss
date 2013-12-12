@@ -69,9 +69,18 @@
 // Font Declarations
 //`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-
 
-
-
-
+	$futura-bold:     'futurastd-bold';
+	@include fontFace( $futura-bold, "fonts/", $futura-bold+"-webfont" );
+	$futura-medium:   'futurastd-medium';
+	@include fontFace( $futura-medium, "fonts/", $futura-medium+"-webfont" );
+	$futura-book:  'futurastd-book';
+	@include fontFace( $futura-book, "fonts/", $futura-book+"-webfont" );
+	
+	$opensans-bold:	'opensans-bold';
+	@include fontFace( $opensans-bold, "fonts/", $opensans-bold+"-webfont" );
+	$opensans-regular: 'opensans-regular';
+	@include fontFace( $opensans-regular, "fonts/", $opensans-regular+"-webfont" );
+	
 //`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-
 // Color Variables
 //`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-
@@ -88,7 +97,8 @@
 	@mixin borderLink($color:false){
 		border: 2px solid $gold;
 		padding: 10px 25px 8px 25px;
-		font: normal 16px "Myriad Pro", "Myriad", sans-serif;
+		font-size: 16px;
+		@include fontStack($opensans-regular, '"Myriad Pro", "Myriad", sans-serif', 200, normal,normal);
 		text-transform: uppercase;
 		text-decoration: none;
 		color: $gold;

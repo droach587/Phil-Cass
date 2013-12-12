@@ -176,14 +176,90 @@
         		</div>
         	</div>
         </section>
+        
+        <section class="photo-gallery full-width">
+        	<div class="photo-gallery-gutter">
+        		<div class="left-col">
+        			<h1 class="gold-heading">simply magic</h1>
+	        		<p class="standard-p">Phil Cass is simply one of the best live entertainers Australia has to offer. He’s a professional magician and comedian that knows how to thrill an audience. He's skilled at controlling and manipulating emotions and delivering a show jammed packed with the best one liners, comebacks, set-ups and ad-lib's imaginable.</p>
+	        		<a href="#" class="float-left clear-left learn-more">view more photos</a>
+        		</div>
+        		<div class="right-col">
+					<!-- Place somewhere in the <body> of your page -->
+					<div class="photo-gal-slider flexslider">
+					  <ul class="slides">
+					    <li>
+					      <img src="http://placehold.it/840x640" />
+					    </li>
+					    <li>
+					      <img src="http://placehold.it/840x640" />
+					    </li>
+					    <li>
+					      <img src="http://placehold.it/840x640" />
+					    </li>
+					    <li>
+					      <img src="http://placehold.it/840x640" />
+					    </li>
+					    <!-- items mirrored twice, total of 12 -->
+					  </ul>
+					</div>
+					<div id="carousel" class="flexslider">
+					  <ul class="slides">
+					    <li>
+					      <img src="http://placehold.it/420x220" />
+					    </li>
+					    <li>
+					     <img src="http://placehold.it/420x220" />
+					    </li>
+					    <li>
+					      <img src="http://placehold.it/420x220" />
+					    </li>
+					    <li>
+					      <img src="http://placehold.it/420x220" />
+					    </li>
+					    <!-- items mirrored twice, total of 12 -->
+					  </ul>
+					</div>
+        		</div>
+        	</div>
+        </section>
+        
+        <section class="promo-showcase full-width">
+        	<div class="promo-gutter">
+        		<div class="left-col">
+        			<iframe class="video" width="498" height="374" src="//www.youtube.com/embed/kJDh0D6fw1A" frameborder="0" allowfullscreen></iframe>
+        		</div>
+        		<div class="right-col">
+        			<h1 class="gold-heading">MAKE YOUR NEXT EVENT UNFORGETTABLE</h1>
+	        		<p class="standard-p">Phil can masterfully perform in a comedy style suitable for all audiences and for any length of performance (from 3 to 60 mins). He’s worked with everyone from Whoopee Goldberg & Olivia Newton John to Bruce Springsteen & Michael Jackson.</p>
+	        		<a href="#" class="float-left clear-left learn-more">view more videos</a>
+        		</div>
+        	</div>
+        </section>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/main.js"></script>
-        
+        <script src="js/vendor/jquery.flexslider-min.js"></script>
         <script>
         	$(document).ready(function(){
-        		mainJs.init({});	
+        		mainJs.init({});
+        		$('#carousel').flexslider({
+				    animation: "slide",
+				    controlNav: false,
+				    animationLoop: false,
+				    slideshow: false,
+				    itemWidth: 110,
+				    itemMargin: 1,
+				    asNavFor: '.photo-gal-slider'
+				});
+        		$('.photo-gal-slider').flexslider({
+				    animation: "slide",
+				    controlNav: false,
+				    animationLoop: false,
+				    slideshow: false,
+				    sync: "#carousel"
+				});	
         	})
         </script>
 
