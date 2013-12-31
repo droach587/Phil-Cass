@@ -281,9 +281,9 @@ iframe.video { border: 1px solid #fff; -webkit-box-shadow: 0px 0px 10px black; -
 .primary-nav .heading-social a:hover { opacity: .7; }
 .primary-nav .heading-social img { height: auto !important; }
 
-.home-hero { background: #222222 url(/img/topmost-blurr-bg.jpg) top center repeat-x; min-height: 555px; padding-top: 55px; }
+.home-hero { background: #222222 url(/img/topmost-blurr-bg.jpg) top center repeat-x; min-height: 545px; padding-top: 55px; }
 .home-hero .hero-gutter { float: left; position: relative; display: block; width: 980px; min-width: 200px !important; margin-left: -490px; left: 50%; }
-.home-hero .logo { height: auto !important; float: left; position: relative; display: block; margin: 10px 0 0 0; padding: 0px; }
+.home-hero .logo { height: auto !important; float: left; position: relative; display: block; margin: 8px 0 0 0; padding: 0px; }
 .home-hero .tagline { color: #fff; margin: 0 0 0 20px; padding: 0; float: left; width: 600px; position: relative; clear: left; text-transform: uppercase; font-size: 60px; font-family: "futurastd-bold", "Futura Std Bold", "Futura Bold", "Futura", sans-serif; font-weight: 200; font-style: normal; line-height: 65px; }
 .home-hero .sub-tagline { float: left; position: relative; display: block; clear: left; width: 430px; font: italic 22px/28px "Georgia", "Times", serif; color: #fff; margin: 20px 0 0 20px; padding: 0px; }
 .home-hero .sub-tagline sub { float: left; position: relative; clear: left; color: #666; margin: 10px 0 0 0; text-transform: uppercase; font-size: 13px; letter-spacing: 1px; font-family: "opensans-regular", "Myriad Pro", "Myriad", sans-serif; font-weight: 200; font-style: normal; line-height: normal; }
@@ -333,12 +333,18 @@ iframe.video { border: 1px solid #fff; -webkit-box-shadow: 0px 0px 10px black; -
 .photo-gallery .left-col a:hover { border-color: #61366b; color: white; -webkit-box-shadow: 0px 0px 10px white; -moz-box-shadow: 0px 0px 10px white; box-shadow: 0px 0px 10px white; text-shadow: 0px 0px 10px #fff; }
 .photo-gallery .right-col { float: right; width: 480px; margin: 35px 0px 0px 0px; }
 .photo-gallery .right-col .flexslider { margin-bottom: 10px; border: 1px solid #fff; -webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; }
-.photo-gallery .right-col #carousel li { margin-right: 1px; }
+.photo-gallery .right-col .flexslider object { float: left; position: relative; display: block; margin: 0px; padding: 0px; }
+.photo-gallery .right-col #carousel li { margin-right: 1px; cursor: pointer !important; }
+.photo-gallery .right-col #carousel li img { -webkit-transition-property: all; transition-property: all; -webkit-transition-duration: 0.5s; animation-duration: 0.5s; }
+.photo-gallery .right-col #carousel li img:hover { opacity: .7; }
+.photo-gallery .right-col #carousel .flex-direction-nav a { width: 30px; height: 30px; font-size: 20px !important; color: #fff !important; margin-top: -10px !important; }
+.photo-gallery .right-col #carousel .flex-direction-nav a:before { font-size: 20px; }
 .photo-gallery .right-col .flex-direction-nav a { width: 50px; height: 50px; margin: -25px 0 0; }
+.photo-gallery .right-col .flex-direction-nav a:before { color: #fff; }
 
 .promo-showcase { min-height: 480px; background: #313131 url(/img/tri-pattern.jpg) 0px 0px repeat; }
 .promo-showcase .promo-gutter { float: left; position: relative; display: block; width: 980px; min-width: 200px !important; margin-left: -490px; left: 50%; }
-.promo-showcase .left-col { float: left; position: relative; display: block; margin: 55px 0px 0px 0px; }
+.promo-showcase .left-col { position: absolute; z-index: 999; top: -18px; left: -55px; }
 .promo-showcase .right-col { margin: 55px 0px 0px 0px; width: 420px; float: right; position: relative; display: block; text-align: left; }
 .promo-showcase .right-col a { margin: 30px 0px 0px 0px; border: 2px solid #deaf58; padding: 10px 25px 8px 25px; font-size: 16px; font-family: "opensans-regular", "Myriad Pro", "Myriad", sans-serif; font-weight: 200; font-style: normal; line-height: normal; text-transform: uppercase; text-decoration: none; color: #deaf58; -webkit-transition-property: all; transition-property: all; -webkit-transition-duration: 0.5s; animation-duration: 0.5s; }
 .promo-showcase .right-col a:hover { border-color: #61366b; color: white; -webkit-box-shadow: 0px 0px 10px white; -moz-box-shadow: 0px 0px 10px white; box-shadow: 0px 0px 10px white; text-shadow: 0px 0px 10px #fff; }

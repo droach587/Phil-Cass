@@ -124,7 +124,7 @@ iframe.video{
 
 .home-hero{
 	background: #222 url(/img/topmost-blurr-bg.jpg) top center repeat-x;
-	min-height: 555px;
+	min-height: 545px;
 	padding-top: 55px;
 	.hero-gutter{
 		@include centerContainer(980,200);
@@ -134,7 +134,7 @@ iframe.video{
 		float: left;
 		position: relative;
 		display: block;
-		margin: 10px 0 0 0;
+		margin: 8px 0 0 0;
 		padding: 0px;
 	}
 	.tagline{
@@ -407,16 +407,43 @@ iframe.video{
 			margin-bottom: 10px;
 			border: 1px solid #fff;
 			@include borderRadius(0px);
+			object{
+				float: left;
+				position: relative;
+				display: block;
+				margin: 0px;
+				padding: 0px;
+			}
 		}
 		#carousel{
 			li{
 				margin-right: 1px;
+				cursor: pointer !important;
+				img{
+					@include transAll();
+					&:hover{
+						opacity: .7;
+					}
+				}
+			}
+			.flex-direction-nav a{
+				width: 30px;
+				height: 30px;
+				font-size: 20px !important;
+				color: #fff !important;
+				margin-top: -10px !important;
+				&:before{
+					font-size: 20px;
+				}
 			}
 		}
 		.flex-direction-nav a{
 			width: 50px;
 			height: 50px;
 			margin: -25px 0 0;
+			&:before{
+				color: #fff;
+			}
 		}
 	}
 }//photo gal
@@ -428,10 +455,10 @@ iframe.video{
 		@include centerContainer(980,200);
 	}
 	.left-col{
-		float: left;
-		position: relative;
-		display: block;
-		margin: 55px 0px 0px 0px;
+		position: absolute;
+		z-index: 999;
+		top: -18px;
+		left: -55px;
 	}
 	.right-col{
 		margin: 55px 0px 0px 0px;
