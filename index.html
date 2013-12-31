@@ -42,7 +42,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <nav class="js-primary-nav full-width primary-nav">
+        <nav class="js-primary-nav fixed full-width primary-nav">
         	<div class="nav-center">
 	        	<ul class="js-main-nav primary-nav-links">
 	        		<li><a href="#home">Home</a></li>
@@ -315,7 +315,9 @@
         <script src="js/vendor/jquery.flexslider-min.js"></script>
         <script type="text/javascript">
         	$(document).ready(function(){
+        		
         		mainJs.init({});
+        		
         		$('#carousel').flexslider({
 				    animation: "slide",
 				    controlNav: false,
@@ -325,6 +327,7 @@
 				    itemMargin: 1,
 				    asNavFor: '.photo-gal-slider'
 				});
+        		
         		$('.photo-gal-slider').flexslider({
 				    animation: "slide",
 				    controlNav: false,
@@ -353,20 +356,7 @@
 				
         	});
         	
-        	$(window).scroll(function() {
-        		$navi = $('.js-primary-nav');
-        		isFixed = $navi.hasClass('fixed');
-        		if($(window).scrollTop()>55){
-        			$navi.addClass('fixed');
-        			$('.home-hero').css('margin-top',55);
-        		}
-        		if($(window).scrollTop() ===0 || $(window).scrollTop()<55){
-        			if(isFixed){
-        				$navi.removeClass('fixed');
-        				$('.home-hero').css('margin-top',0);
-        			}
-        		}
-        	});
+
         </script>
         <div id="fb-root" class="hidden"></div>
 		<script>(function(d, s, id) {

@@ -67,7 +67,6 @@ iframe.video{
 		width: 100%;
 		display: block;
 		position: fixed;
-		top: 0px;
 		left: 0px;
 		z-index: 999999;
 		@include boxShadowMulti(0px 0px 10px #000);
@@ -120,6 +119,7 @@ iframe.video{
 .home-hero{
 	background: #222 url(/img/topmost-blurr-bg.jpg) top center repeat-x;
 	min-height: 555px;
+	padding-top: 55px;
 	.hero-gutter{
 		@include centerContainer(980,200);
 	}
