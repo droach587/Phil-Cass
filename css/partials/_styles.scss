@@ -75,6 +75,11 @@ iframe.video{
 		text-align: center;
 		@include centerContainer(980,200);
 	}
+	.nav-logo-popup{
+		position: absolute;
+		left: 0px;
+		top: -18px;
+	}
 	.primary-nav-links{
 		text-align: center;
 		display: block;
@@ -84,10 +89,11 @@ iframe.video{
 		a{
 			color: $main-nav-link;
 			font-size: 13px;
-			@include fontStack($opensans-regular, '"Myriad Pro", "Myriad", sans-serif', 200, normal,22px);
+			letter-spacing: 1px;
 			text-decoration: none;
 			text-transform: uppercase;
 			@include transAll();
+			@include fontStack($opensans-regular, '"Myriad Pro", "Myriad", sans-serif', 200, normal,22px);
 			&:hover{
 				color: $main-nav-link-active;
 			}
@@ -128,7 +134,7 @@ iframe.video{
 		float: left;
 		position: relative;
 		display: block;
-		margin: 20px 0 0 0;
+		margin: 10px 0 0 0;
 		padding: 0px;
 	}
 	.tagline{
@@ -161,11 +167,12 @@ iframe.video{
 			margin: 10px 0 0 0;
 			text-transform: uppercase;
 			font-size: 13px;
+			letter-spacing: 1px;
 			@include fontStack($opensans-regular, '"Myriad Pro", "Myriad", sans-serif', 200, normal,normal);
 		}
 	}
 	.learn-more{
-		margin: 40px 0 0 20px;
+		margin: 27px 0 0 20px;
 		@include borderLink();
 	}
 	.abs{
@@ -174,15 +181,15 @@ iframe.video{
 		display: block;
 		bottom: 0px;
 		&.phil{
-			margin-left: 120px;
+			margin-left: 60px;
 			z-index: 999;
 		}
 		&.philippa{
-			margin-left: 209px;
+			margin-left: 149px;
 			bottom: -83px;
 		}
 		&.duck{
-			margin-left: 81px;
+			margin-left: 21px;
 			z-index: 9999;
 		}
 	}
@@ -206,7 +213,7 @@ iframe.video{
 			display: inline-block;
 			position: relative;
 			width: 180px;
-			margin-left: 16px;
+			margin-left: 13px;
 			vertical-align: top;
 			&:first-child{
 				margin-left: 0px !important;
@@ -221,18 +228,23 @@ iframe.video{
 			width: 180px;
 			left: 50%;
 			margin-left: -90px;
-			font-size: 64px;
-			@include fontStack($futura-bold, '"Futura Std Bold", "Futura Bold", "Futura", sans-serif', 200, normal,normal);
+			font-size: 62px;
 			color: #fff;
+			@include fontStack($futura-bold, '"Futura Std Bold", "Futura Bold", "Futura", sans-serif', 200, normal,normal);
 			&.big-type{
 				width: 100%;
 				text-align: center;
 				display: block;
 				float: left;
 				position: relative;
-				margin: 12px 10px 0 0px;
+				margin: 20px 10px 12px 0px;
 				left: 0px;
 				color: $gold;
+				letter-spacing: -2px;
+				font-size: 54px;
+				background: -webkit-linear-gradient(#dbbd6d, #a56a16);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
 			}
 		}
 		.type{
@@ -242,9 +254,9 @@ iframe.video{
 			font-size: 16px;
 			@include fontStack($opensans-bold, '"Myriad Pro", "Myriad", sans-serif', 200, normal,22px);
 			sub{
-				color: #444;
+				color: lighten(#444,20%);
 				font-size: 14px;
-			@include fontStack($opensans-regular, '"Myriad Pro", "Myriad", sans-serif', 200, normal,20px);
+				@include fontStack($opensans-regular, '"Myriad Pro", "Myriad", sans-serif', 200, normal,20px);
 			}
 		}
 	}//awards
@@ -275,7 +287,6 @@ iframe.video{
 .testimonials{
 	min-height: 480px;
 	background: #313131 url(/img/tri-pattern.jpg) 0px 0px repeat;
-	border-bottom: 1px solid #fff;
 	.testimonials-gutter{
 		@include centerContainer(980,200);
 	}
@@ -359,7 +370,7 @@ iframe.video{
 					display: block;
 					color: #fff;
 					width: 100%;
-					padding: 2px 0px 2px 0px;
+					padding: 4px 0px 4px 0px;
 					font: normal 14px "Georgia", "Times", serif;
 					strong{
 						color: $gold;
@@ -390,8 +401,8 @@ iframe.video{
 	}
 	.right-col{
 		float: right;
-		width: 430px;
-		margin: 50px 0px 0px 0px;
+		width: 480px;
+		margin: 35px 0px 0px 0px;
 		.flexslider{
 			margin-bottom: 10px;
 			border: 1px solid #fff;
@@ -449,7 +460,7 @@ iframe.video{
 		width:350px;
 		.full-width{
 			&.adjust{
-				margin-bottom: 25px;
+				margin-bottom: 15px;
 				min-height: 40px;
 				display: table;
 			}
@@ -465,7 +476,6 @@ iframe.video{
 		padding: 0px 0px 0px 20px;
 		a{
 			color:$gold;
-			font-weight: bold;
 			@include transAll();
 			&:hover{
 				color: #fff;
@@ -488,7 +498,7 @@ iframe.video{
 			float: left;
 			position: relative;
 			display: block;
-			margin-top: 10px;
+			margin-top: 5px;
 			margin-left: 5px;
 		}
 	}
@@ -504,9 +514,6 @@ iframe.video{
 				font:normal 17px/20px "Myriad Pro", "Myriad", sans-serif;
 				color: #fff;
 				@include transAll();
-				&:hover{
-					color: $gold;
-				}
 				span{
 					color: $gold;
 				}
@@ -524,11 +531,12 @@ iframe.video{
 					-webkit-outline:none;
 					-moz-outline:none;
 					background: #bbb;
+					border-color: $gold;
 					color: #222;
 				}
 			}
 			textarea{
-				height: 102px;
+				height: 185px;
 			}
 			.left-col{
 				width: 270px;

@@ -271,8 +271,9 @@ iframe.video { border: 1px solid #fff; -webkit-box-shadow: 0px 0px 10px black; -
 .primary-nav { background: #000; min-height: 55px; }
 .primary-nav.fixed { width: 100%; display: block; position: fixed; left: 0px; z-index: 999999; -webkit-box-shadow: 0px 0px 10px black; -moz-box-shadow: 0px 0px 10px black; box-shadow: 0px 0px 10px black; }
 .primary-nav .nav-center { text-align: center; float: left; position: relative; display: block; width: 980px; min-width: 200px !important; margin-left: -490px; left: 50%; }
+.primary-nav .nav-logo-popup { position: absolute; left: 0px; top: -18px; }
 .primary-nav .primary-nav-links { text-align: center; display: block; margin: 0px; padding: 0px; float: left; position: relative; display: block; width: 980px; min-width: 200px !important; margin-left: -490px; left: 50%; }
-.primary-nav .primary-nav-links a { color: #707070; font-size: 13px; font-family: "opensans-regular", "Myriad Pro", "Myriad", sans-serif; font-weight: 200; font-style: normal; line-height: 22px; text-decoration: none; text-transform: uppercase; -webkit-transition-property: all; transition-property: all; -webkit-transition-duration: 0.5s; animation-duration: 0.5s; }
+.primary-nav .primary-nav-links a { color: #707070; font-size: 13px; letter-spacing: 1px; text-decoration: none; text-transform: uppercase; -webkit-transition-property: all; transition-property: all; -webkit-transition-duration: 0.5s; animation-duration: 0.5s; font-family: "opensans-regular", "Myriad Pro", "Myriad", sans-serif; font-weight: 200; font-style: normal; line-height: 22px; }
 .primary-nav .primary-nav-links a:hover { color: #61366b; }
 .primary-nav .primary-nav-links li { display: inline-block; margin: 18px 20px 0 30px; }
 .primary-nav .heading-social { float: right; position: relative; display: block; text-align: right; }
@@ -282,33 +283,33 @@ iframe.video { border: 1px solid #fff; -webkit-box-shadow: 0px 0px 10px black; -
 
 .home-hero { background: #222222 url(/img/topmost-blurr-bg.jpg) top center repeat-x; min-height: 555px; padding-top: 55px; }
 .home-hero .hero-gutter { float: left; position: relative; display: block; width: 980px; min-width: 200px !important; margin-left: -490px; left: 50%; }
-.home-hero .logo { height: auto !important; float: left; position: relative; display: block; margin: 20px 0 0 0; padding: 0px; }
+.home-hero .logo { height: auto !important; float: left; position: relative; display: block; margin: 10px 0 0 0; padding: 0px; }
 .home-hero .tagline { color: #fff; margin: 0 0 0 20px; padding: 0; float: left; width: 600px; position: relative; clear: left; text-transform: uppercase; font-size: 60px; font-family: "futurastd-bold", "Futura Std Bold", "Futura Bold", "Futura", sans-serif; font-weight: 200; font-style: normal; line-height: 65px; }
 .home-hero .sub-tagline { float: left; position: relative; display: block; clear: left; width: 430px; font: italic 22px/28px "Georgia", "Times", serif; color: #fff; margin: 20px 0 0 20px; padding: 0px; }
-.home-hero .sub-tagline sub { float: left; position: relative; clear: left; color: #666; margin: 10px 0 0 0; text-transform: uppercase; font-size: 13px; font-family: "opensans-regular", "Myriad Pro", "Myriad", sans-serif; font-weight: 200; font-style: normal; line-height: normal; }
-.home-hero .learn-more { margin: 40px 0 0 20px; border: 2px solid #deaf58; padding: 10px 25px 8px 25px; font-size: 16px; font-family: "opensans-regular", "Myriad Pro", "Myriad", sans-serif; font-weight: 200; font-style: normal; line-height: normal; text-transform: uppercase; text-decoration: none; color: #deaf58; -webkit-transition-property: all; transition-property: all; -webkit-transition-duration: 0.5s; animation-duration: 0.5s; }
+.home-hero .sub-tagline sub { float: left; position: relative; clear: left; color: #666; margin: 10px 0 0 0; text-transform: uppercase; font-size: 13px; letter-spacing: 1px; font-family: "opensans-regular", "Myriad Pro", "Myriad", sans-serif; font-weight: 200; font-style: normal; line-height: normal; }
+.home-hero .learn-more { margin: 27px 0 0 20px; border: 2px solid #deaf58; padding: 10px 25px 8px 25px; font-size: 16px; font-family: "opensans-regular", "Myriad Pro", "Myriad", sans-serif; font-weight: 200; font-style: normal; line-height: normal; text-transform: uppercase; text-decoration: none; color: #deaf58; -webkit-transition-property: all; transition-property: all; -webkit-transition-duration: 0.5s; animation-duration: 0.5s; }
 .home-hero .learn-more:hover { border-color: #61366b; color: white; -webkit-box-shadow: 0px 0px 10px white; -moz-box-shadow: 0px 0px 10px white; box-shadow: 0px 0px 10px white; text-shadow: 0px 0px 10px #fff; }
 .home-hero .abs { position: absolute; left: 50%; display: block; bottom: 0px; }
-.home-hero .abs.phil { margin-left: 120px; z-index: 999; }
-.home-hero .abs.philippa { margin-left: 209px; bottom: -83px; }
-.home-hero .abs.duck { margin-left: 81px; z-index: 9999; }
+.home-hero .abs.phil { margin-left: 60px; z-index: 999; }
+.home-hero .abs.philippa { margin-left: 149px; bottom: -83px; }
+.home-hero .abs.duck { margin-left: 21px; z-index: 9999; }
 
 .accolades { min-height: 658px; background: #252525 url(/img/stars.jpg) center center no-repeat; -webkit-box-shadow: 0px 0px 200px #80478d; -moz-box-shadow: 0px 0px 200px #80478d; box-shadow: 0px 0px 200px #80478d; }
 .accolades .accolades-gutter { text-align: center; float: left; position: relative; display: block; width: 980px; min-width: 200px !important; margin-left: -490px; left: 50%; }
 .accolades .awards { width: 100%; display: inline-block; text-align: center; margin: 40px 0 0 0; padding: 0px; }
-.accolades .awards li { display: inline-block; position: relative; width: 180px; margin-left: 16px; vertical-align: top; }
+.accolades .awards li { display: inline-block; position: relative; width: 180px; margin-left: 13px; vertical-align: top; }
 .accolades .awards li:first-child { margin-left: 0px !important; }
 .accolades .awards .branches { display: inline-block; }
-.accolades .awards .number { position: absolute; top: -9px; width: 180px; left: 50%; margin-left: -90px; font-size: 64px; font-family: "futurastd-bold", "Futura Std Bold", "Futura Bold", "Futura", sans-serif; font-weight: 200; font-style: normal; line-height: normal; color: #fff; }
-.accolades .awards .number.big-type { width: 100%; text-align: center; display: block; float: left; position: relative; margin: 12px 10px 0 0px; left: 0px; color: #deaf58; }
+.accolades .awards .number { position: absolute; top: -9px; width: 180px; left: 50%; margin-left: -90px; font-size: 62px; color: #fff; font-family: "futurastd-bold", "Futura Std Bold", "Futura Bold", "Futura", sans-serif; font-weight: 200; font-style: normal; line-height: normal; }
+.accolades .awards .number.big-type { width: 100%; text-align: center; display: block; float: left; position: relative; margin: 20px 10px 12px 0px; left: 0px; color: #deaf58; letter-spacing: -2px; font-size: 54px; background: -webkit-linear-gradient(#dbbd6d, #a56a16); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 .accolades .awards .type { margin: 10px 0 0 0; padding: 0px; color: #fff; font-size: 16px; font-family: "opensans-bold", "Myriad Pro", "Myriad", sans-serif; font-weight: 200; font-style: normal; line-height: 22px; }
-.accolades .awards .type sub { color: #444; font-size: 14px; font-family: "opensans-regular", "Myriad Pro", "Myriad", sans-serif; font-weight: 200; font-style: normal; line-height: 20px; }
+.accolades .awards .type sub { color: #777777; font-size: 14px; font-family: "opensans-regular", "Myriad Pro", "Myriad", sans-serif; font-weight: 200; font-style: normal; line-height: 20px; }
 .accolades .media-bank { margin-top: 60px; }
 .accolades .left-col { float: left; position: relative; display: block; width: 430px; text-align: left; }
 .accolades .left-col .gold-heading { float: left; width: 100%; display: block; }
 .accolades .left-col .standard-p { float: left; width: 100%; display: block; margin-top: 20px; }
 
-.testimonials { min-height: 480px; background: #313131 url(/img/tri-pattern.jpg) 0px 0px repeat; border-bottom: 1px solid #fff; }
+.testimonials { min-height: 480px; background: #313131 url(/img/tri-pattern.jpg) 0px 0px repeat; }
 .testimonials .testimonials-gutter { float: left; position: relative; display: block; width: 980px; min-width: 200px !important; margin-left: -490px; left: 50%; }
 .testimonials .left-col { float: left; position: relative; display: block; width: 615px; }
 .testimonials .left-col .testimonials-ul { float: left; position: relative; display: block; margin: 0px; padding: 0px; }
@@ -322,7 +323,7 @@ iframe.video { border: 1px solid #fff; -webkit-box-shadow: 0px 0px 10px black; -
 .testimonials .right-col .gold-heading { float: left; position: relative; display: block; width: 100%; text-align: left; margin-top: 40px; }
 .testimonials .right-col .clients { margin-top: 15px; }
 .testimonials .right-col .clients ul { width: 45%; float: left; padding: 0px; margin: 0px 0px 0px 2%; }
-.testimonials .right-col .clients ul li { float: left; position: relative; display: block; color: #fff; width: 100%; padding: 2px 0px 2px 0px; font: normal 14px "Georgia", "Times", serif; }
+.testimonials .right-col .clients ul li { float: left; position: relative; display: block; color: #fff; width: 100%; padding: 4px 0px 4px 0px; font: normal 14px "Georgia", "Times", serif; }
 .testimonials .right-col .clients ul li strong { color: #deaf58; display: inline-block; margin-right: 5px; }
 
 .photo-gallery { background: #2f1736 url(/img/stars-flat.jpg) center center repeat-x; min-height: 480px; }
@@ -330,7 +331,7 @@ iframe.video { border: 1px solid #fff; -webkit-box-shadow: 0px 0px 10px black; -
 .photo-gallery .left-col { float: left; position: relative; margin: 95px 0px 0px 0px; width: 470px; }
 .photo-gallery .left-col a { margin: 30px 0px 0px 0px; border: 2px solid #deaf58; padding: 10px 25px 8px 25px; font-size: 16px; font-family: "opensans-regular", "Myriad Pro", "Myriad", sans-serif; font-weight: 200; font-style: normal; line-height: normal; text-transform: uppercase; text-decoration: none; color: #deaf58; -webkit-transition-property: all; transition-property: all; -webkit-transition-duration: 0.5s; animation-duration: 0.5s; }
 .photo-gallery .left-col a:hover { border-color: #61366b; color: white; -webkit-box-shadow: 0px 0px 10px white; -moz-box-shadow: 0px 0px 10px white; box-shadow: 0px 0px 10px white; text-shadow: 0px 0px 10px #fff; }
-.photo-gallery .right-col { float: right; width: 430px; margin: 50px 0px 0px 0px; }
+.photo-gallery .right-col { float: right; width: 480px; margin: 35px 0px 0px 0px; }
 .photo-gallery .right-col .flexslider { margin-bottom: 10px; border: 1px solid #fff; -webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; }
 .photo-gallery .right-col #carousel li { margin-right: 1px; }
 .photo-gallery .right-col .flex-direction-nav a { width: 50px; height: 50px; margin: -25px 0 0; }
@@ -345,22 +346,21 @@ iframe.video { border: 1px solid #fff; -webkit-box-shadow: 0px 0px 10px black; -
 .contact-social { background: #222222 url(/img/starring.jpg) 0px 0px repeat; min-height: 514px; }
 .contact-social .contact-gutter { float: left; position: relative; display: block; width: 980px; min-width: 200px !important; margin-left: -490px; left: 50%; }
 .contact-social .left-col { float: left; position: relative; display: block; width: 350px; }
-.contact-social .left-col .full-width.adjust { margin-bottom: 25px; min-height: 40px; display: table; }
+.contact-social .left-col .full-width.adjust { margin-bottom: 15px; min-height: 40px; display: table; }
 .contact-social .tablcell { display: table-cell; vertical-align: middle; width: 100%; height: 40px; color: #fff; font: normal 17px/20px "Myriad Pro", "Myriad", sans-serif; padding: 0px 0px 0px 20px; }
-.contact-social .tablcell a { color: #deaf58; font-weight: bold; -webkit-transition-property: all; transition-property: all; -webkit-transition-duration: 0.5s; animation-duration: 0.5s; }
+.contact-social .tablcell a { color: #deaf58; -webkit-transition-property: all; transition-property: all; -webkit-transition-duration: 0.5s; animation-duration: 0.5s; }
 .contact-social .tablcell a:hover { color: #fff; }
 .contact-social .socials { margin-left: 60px; }
 .contact-social .socials a { float: left; position: relative; display: block; margin-right: 5px; -webkit-transition-property: all; transition-property: all; -webkit-transition-duration: 0.5s; animation-duration: 0.5s; }
 .contact-social .socials a:hover { opacity: .6; }
-.contact-social .socials .fb-like { float: left; position: relative; display: block; margin-top: 10px; margin-left: 5px; }
+.contact-social .socials .fb-like { float: left; position: relative; display: block; margin-top: 5px; margin-left: 5px; }
 .contact-social .right-col { width: 600px; float: right; margin-top: 60px; }
 .contact-social .right-col .footer-email { margin-top: 30px; }
 .contact-social .right-col .footer-email label { margin-bottom: 20px; text-align: left; font: normal 17px/20px "Myriad Pro", "Myriad", sans-serif; color: #fff; -webkit-transition-property: all; transition-property: all; -webkit-transition-duration: 0.5s; animation-duration: 0.5s; }
-.contact-social .right-col .footer-email label:hover { color: #deaf58; }
 .contact-social .right-col .footer-email label span { color: #deaf58; }
 .contact-social .right-col .footer-email input, .contact-social .right-col .footer-email textarea { border: 1px solid #bbb; background: #323232; padding: 10px; color: #eee; resize: none; font: normal 17px/20px "Myriad Pro", "Myriad", sans-serif; -webkit-transition-property: all; transition-property: all; -webkit-transition-duration: 0.5s; animation-duration: 0.5s; }
-.contact-social .right-col .footer-email input:focus, .contact-social .right-col .footer-email textarea:focus { outline: none; -webkit-outline: none; -moz-outline: none; background: #bbb; color: #222; }
-.contact-social .right-col .footer-email textarea { height: 102px; }
+.contact-social .right-col .footer-email input:focus, .contact-social .right-col .footer-email textarea:focus { outline: none; -webkit-outline: none; -moz-outline: none; background: #bbb; border-color: #deaf58; color: #222; }
+.contact-social .right-col .footer-email textarea { height: 185px; }
 .contact-social .right-col .footer-email .left-col { width: 270px; float: left; position: relative; display: block; }
 .contact-social .right-col .footer-email .right-col { float: left; position: relative; display: block; width: 260px; margin-left: 50px; margin-top: 0px; }
 .contact-social .right-col .footer-email .right-col a { margin: 20px -22px 0px 0px; border: 2px solid #deaf58; padding: 10px 25px 8px 25px; font-size: 16px; font-family: "opensans-regular", "Myriad Pro", "Myriad", sans-serif; font-weight: 200; font-style: normal; line-height: normal; text-transform: uppercase; text-decoration: none; color: #deaf58; -webkit-transition-property: all; transition-property: all; -webkit-transition-duration: 0.5s; animation-duration: 0.5s; }
