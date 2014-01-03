@@ -59,7 +59,10 @@ iframe.video{
 	border: 1px solid #fff;
 	@include boxShadowMulti(0px 0px 10px #000);
 }
-
+.mobile-nav{
+	display: none;
+	visibility: hidden;
+}
 .primary-nav{
 	background: #000;
 	min-height: 55px;
@@ -266,6 +269,11 @@ iframe.video{
 	.media-bank{
 		margin-top: 60px;
 	}
+	.video-mobile{
+		display: none;
+		visibility: hidden;
+		margin-top: 30px;
+	}
 	.left-col{
 		float: left;
 		position: relative;
@@ -409,6 +417,7 @@ iframe.video{
 		.flexslider{
 			margin-bottom: 10px;
 			border: 1px solid #fff;
+			max-height: 319px;
 			@include borderRadius(0px);
 			object{
 				float: left;
