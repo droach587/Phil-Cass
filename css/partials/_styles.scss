@@ -192,13 +192,16 @@ iframe.video{
 			margin-left: 21px;
 			z-index: 9999;
 		}
+	}//abs
+	.phil-merge-mobile{
+		visibility: hidden;
+		display: none;
 	}
 }//Home Hero
 
 .accolades{
 	min-height: 658px;
 	background: #252525 url(/img/stars.jpg) center center no-repeat;
-	@include boxShadowMulti(0px 0px 200px lighten($main-nav-link-active, 10%));
 	.accolades-gutter{
 		text-align: center;
 		@include centerContainer(980,200);

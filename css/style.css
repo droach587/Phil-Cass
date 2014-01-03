@@ -293,8 +293,9 @@ iframe.video { border: 1px solid #fff; -webkit-box-shadow: 0px 0px 10px black; -
 .home-hero .abs.phil { margin-left: 60px; z-index: 999; }
 .home-hero .abs.philippa { margin-left: 149px; bottom: -83px; }
 .home-hero .abs.duck { margin-left: 21px; z-index: 9999; }
+.home-hero .phil-merge-mobile { visibility: hidden; display: none; }
 
-.accolades { min-height: 658px; background: #252525 url(/img/stars.jpg) center center no-repeat; -webkit-box-shadow: 0px 0px 200px #80478d; -moz-box-shadow: 0px 0px 200px #80478d; box-shadow: 0px 0px 200px #80478d; }
+.accolades { min-height: 658px; background: #252525 url(/img/stars.jpg) center center no-repeat; }
 .accolades .accolades-gutter { text-align: center; float: left; position: relative; display: block; width: 980px; min-width: 200px !important; margin-left: -490px; left: 50%; }
 .accolades .awards { width: 100%; display: inline-block; text-align: center; margin: 40px 0 0 0; padding: 0px; }
 .accolades .awards li { display: inline-block; position: relative; width: 180px; margin-left: 13px; vertical-align: top; }
@@ -476,6 +477,32 @@ html[xmlns] .slides { display: block; }
 
 @media screen and (max-width: 860px) { .flex-direction-nav .flex-prev { opacity: 1; left: 10px; }
   .flex-direction-nav .flex-next { opacity: 1; right: 10px; } }
+@media only screen and (max-width: 980px) { .primary-nav.fixed { visibility: hidden; display: none !important; }
+  .abs { visibility: hidden !important; display: none !important; }
+  .phil-merge-mobile { visibility: visible !important; display: block !important; width: 100%; }
+  .phil-merge-mobile img { height: auto !important; }
+  .flexslider { margin: 0px; }
+  #carousel { visibility: hidden !important; display: none !important; }
+  .home-hero .hero-gutter, .accolades .accolades-gutter, .accolades .left-col, .accolades .right-col, .testimonials .left-col, .testimonials .right-col, .testimonials .testimonials-gutter, .photo-gallery .photo-gallery-gutter, .photo-gallery .left-col, .photo-gallery .right-col, .promo-showcase .promo-gutter, .promo-showcase .left-col, .promo-showcase .right-col, .contact-social .contact-gutter, .contact-social .left-col, .contact-social .right-col, .global-footer .footer-gutter, .contact-social .right-col .footer-email .left-col, .contact-social .right-col .footer-email .right-col { width: 95%; margin-left: -47.5%; clear: left; left: 50%; top: 0px; float: left; position: relative; display: block; min-width: 150px !important; }
+  .home-hero { background-image: none; background-color: #44254b; }
+  .home-hero .logo { text-align: center; width: 100%; display: block; margin-top: -40px; }
+  .home-hero .logo img { width: 100%; height: auto !important; }
+  .home-hero .tagline { font-size: 35px; line-height: 38px; }
+  .home-hero .tagline { width: 100%; margin-left: 0px; }
+  .home-hero .sub-tagline { width: 100%; display: block; margin-left: 0px; margin-top: 10px; }
+  .home-hero .learn-more { visibility: hidden; display: none !important; }
+  .testimonials .left-col .testimonials-ul { width: 95%; margin-left: -47.5%; left: 50%; clear: left; margin-right: 0px; text-align: center; }
+  .testimonials .left-col .testimonials-ul li { width: 100%; clear: left; margin-right: 0px; text-align: center; }
+  .testimonials .left-col .testimonials-ul li .pic { float: none; display: inline-block; }
+  .testimonials .left-col .testimonials-ul li .credit { text-align: center; }
+  .testimonials .left-col .testimonials-ul li .credit .cred { float: left; clear: left; position: relative; padding: 0px; text-align: center; width: 100%; }
+  .testimonials .right-col .gold-heading { text-align: center; }
+  .testimonials .right-col .clients ul { width: 50%; margin: 0px; padding: 0px; }
+  .testimonials .right-col .clients ul li { width: 100%; margin: 0px; text-align: center; }
+  .photo-gallery { background-image: none; }
+  .photo-gallery .right-col { overflow: hidden; }
+  .photo-gallery .left-col .standard-p { text-align: center; }
+  .photo-gallery .left-col .gold-heading { text-align: center; } }
 @media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) { /* Style adjustments for high resolution devices */ }
 @media print { * { background: transparent !important; color: #000 !important; /* Black prints faster: h5bp.com/s */ box-shadow: none !important; text-shadow: none !important; }
   a, a:visited { text-decoration: underline; }
