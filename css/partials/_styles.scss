@@ -97,7 +97,7 @@ iframe.video{
 			text-transform: uppercase;
 			@include transAll();
 			@include fontStack($opensans-regular, '"Myriad Pro", "Myriad", sans-serif', 200, normal,22px);
-			&:hover{
+			&:hover, &.active{
 				color: $main-nav-link-active;
 			}
 		}
@@ -320,7 +320,7 @@ iframe.video{
 				text-align: left;
 				margin-right: 30px;
 				.quote{
-					width: 100%;
+					width: 90%;
 					margin: 60px 0px 15px 0px;
 					color: $gold;
 					font: italic 22px/25px "Georgia", "Times", serif;
@@ -335,7 +335,12 @@ iframe.video{
 					clear: left;
 					height: auto !important;
 					margin: 15px 0px 0px 0px;
+					background: #4b4b4b;
 					@include borderRadius(70px);
+					img{
+						height: auto !important;
+						@include borderRadius(70px);
+					}
 				}
 				.credit{
 					display: table;
@@ -382,7 +387,8 @@ iframe.video{
 					color: #fff;
 					width: 100%;
 					padding: 4px 0px 4px 0px;
-					font: normal 14px "Georgia", "Times", serif;
+					font-size: 15px;
+					@include fontStack($opensans-regular, '"Myriad Pro", "Myriad", sans-serif', 200, normal,normal);
 					strong{
 						color: $gold;
 						display: inline-block;
@@ -409,6 +415,9 @@ iframe.video{
 			margin: 30px 0px 0px 0px;
 			@include borderLink();
 		}
+		.standard-p{
+			width: 360px;
+		}
 	}
 	.right-col{
 		float: right;
@@ -428,22 +437,32 @@ iframe.video{
 			}
 		}
 		#carousel{
+			border: none !important;
+			background: transparent !important;
 			li{
-				margin-right: 1px;
+				margin-right: 4px;
 				cursor: pointer !important;
 				img{
-					@include transAll();
+					margin-top: 2px;
 					&:hover{
 						opacity: .7;
 					}
 				}
 			}
+			.flex-active-slide{
+				border: 2px solid $gold;
+				img{
+					margin-top: 0px;
+				}
+				 
+			}
 			.flex-direction-nav a{
 				width: 30px;
 				height: 30px;
 				font-size: 20px !important;
-				color: #fff !important;
+				color: $gold !important;
 				margin-top: -10px !important;
+				opacity: 1 !important;
 				&:before{
 					font-size: 20px;
 				}
@@ -453,9 +472,18 @@ iframe.video{
 			width: 50px;
 			height: 50px;
 			margin: -25px 0 0;
+			opacity: 1 !important;
 			&:before{
-				color: #fff;
+				color: $gold;
 			}
+		}
+		.flex-direction-nav .flex-next,
+		.flex-direction-nav .flex-next:hover{
+			right: -40px !important;
+		}
+		.flex-direction-nav .flex-prev,
+		.flex-direction-nav .flex-prev:hover{
+			left: -40px !important;
 		}
 	}
 }//photo gal

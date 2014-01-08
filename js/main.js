@@ -27,17 +27,59 @@ var mainJs = (function($){
 
 	}());
 	
-	
-
-	
-
 	// PUBLIC METHODS
 	return {
 			
-		init: function(options) {
+		scrollingWaypoint: function(options) {
 			
-			var defaults = {}
-			options = $.extend(defaults, options);	
+			var defaults = {
+				standardOffset: 55
+			}
+			options = $.extend(defaults, options);
+			
+			//Set Waypoints
+			standardOffset = options.standardOffset;
+			
+			$('#awards').waypoint({ offset: standardOffset });
+			$('#test').waypoint({ offset: standardOffset });
+			$('#gallery').waypoint({ offset: standardOffset });
+			$('#promo-showcase').waypoint({ offset: standardOffset });
+			$('#contact').waypoint({ offset: standardOffset+150 });
+			
+			$(window).scroll( function(){
+				scrollTop = $(document).scrollTop();
+				if(scrollTop == 0){
+					$('.js-main-nav li').find('a.active').removeClass('active');
+				}
+			});
+
+			//set elements as waypoints
+			$('body').delegate('#awards, #test, #gallery, #promo-showcase, #contact', 'waypoint.reached', function(event, direction) {
+
+				
+				var $activeTitle = $(this).attr('id');
+				
+				console.log($activeTitle);
+				
+				var $activeElement = $('.js-main-nav li').find('a#'+$activeTitle+'-nav');
+				var $prevActive = $('.js-main-nav li').find('a.active');
+				
+				console.log($activeElement, direction);
+				
+				
+				if (direction === "up") {
+					//console.log($active,$prevActive);
+					$('.primary-nav-links li').each(function(){
+						$(this).find('a').removeClass('active');
+					})
+					$prevActive.parent().prev().find('a').addClass('active');
+				}else{
+					$('.primary-nav-links li').each(function(){
+						$(this).find('a').removeClass('active');
+					})
+					$('.js-main-nav li').find('a#'+$activeTitle+'-nav').addClass('active');
+				}		
+			});
 
 		}		
 	}
