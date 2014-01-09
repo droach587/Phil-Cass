@@ -9,17 +9,36 @@
 		display: block !important;
 		position: fixed !important;
 		width: 100% !important;
-		background: #000 !important;
+		background: #545454; /* Old browsers */
+		background: -moz-linear-gradient(top,  #545454 0%, #0e0e0e 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#545454), color-stop(100%,#0e0e0e)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #545454 0%,#0e0e0e 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #545454 0%,#0e0e0e 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #545454 0%,#0e0e0e 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #545454 0%,#0e0e0e 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#545454', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
 		padding: 5px 0px 5px 0px !important;
 		left: 0px;
 		top: 0px;
 		z-index: 99999;
+		.mobile-button{
+			background: #000;
+			padding-top: 6px;
+			margin-top: -6px;
+			margin-bottom: -6px;
+			border-left: 1px solid darken(#bbb,50%);
+			img{
+				width: 55px;
+
+			}
+		}
+		@include boxShadowMulti(0px 0px 10px #000);
 		.mobile-tree{
 			width: 100%;
 			float: left;
 			position: relative;
 			display: block;
-			margin: 0px;
+			margin: 6px 0 0 0;
 			padding: 0px;
 			border-bottom: 1px solid darken(#bbb,50%);
 			margin-bottom: -5px;
@@ -33,7 +52,7 @@
 				font-size: 16px;
 				border-top: 1px solid darken(#bbb,50%);
 				text-transform: uppercase;
-				@include fontStack($opensans-regular, '"Myriad Pro", "Myriad", sans-serif', 200, normal,26px);
+				@include fontStack($futura-bold, '"Futura Std Bold", "Futura Bold", "Futura", sans-serif', 200, normal,26px);
 				a{
 					color: #c19741;
 					width: 100%;
@@ -186,6 +205,9 @@
 			}//credit
 		}//li	
 	}//ul left col
+	.accolades{
+		background-position: 20% center;
+	}
 	.testimonials .right-col{
 		.gold-heading{
 			text-align: center;
@@ -260,6 +282,15 @@
 		position: relative !important;
 		display: block !important;
 		margin-bottom: 15px;
+	}
+	
+	.photo-gallery{
+		.flex-next{
+			margin-right: 60px !important;
+		}
+		.flex-prev{
+			margin-left: 60px !important;
+		}
 	}
 	
 }//media query

@@ -44,7 +44,9 @@
         
         <nav class="js-mobile-nav mobile-nav full-width">
 	        <img class="float-left js-logo-popup hidden" src="/img/main-logo.png" width="78" height="auto">
-	        <img class="float-right" src="/img/mobile-menu.jpg" width="45" height="auto">
+	        <div class="mobile-button float-right">
+		        <img class="float-right" src="/img/mobile-menu.jpg" width="45" height="auto">
+	        </div>
 	        <ul class="js-mobile-tree mobile-tree hidden">
 		        <li><a href="#home">Home</a></li>
         		<li><a href="#awards">Awards</a></li>
@@ -78,9 +80,9 @@
         		<h2 class="sub-tagline">&#8220;Phil Cass is untouchable as Australia's No.1 corporate comedy magic act.&#8221; <sub>— National Press Club of Australia</sub></h2>
         		<a href="#" class="float-left clear-left learn-more">learn more</a>
         	</div>
-        	<div class="abs phil"><img src="/img/phil-large.png" alt="phil-largw" width="491" height="auto" /></div>
-        	<div class="abs philippa"><img src="/img/phillippa-large.png" alt="phillippa-large" width="377" height="auto" /></div>
-        	<div class="abs duck"><img src="/img/duck-large.png" alt="duck-large" width="117" height="auto" /></div>
+        	<div class="abs phil hidden js-anim js-phil-anim"><img src="/img/phil-large.png" alt="phil-largw" width="491" height="auto" /></div>
+        	<div class="abs philippa hidden js-anim js-philippa-anim"><img src="/img/phillippa-large.png" alt="phillippa-large" width="377" height="auto" /></div>
+        	<div class="abs duck hidden js-anim js-duck-anim"><img src="/img/duck-large.png" alt="duck-large" width="117" height="auto" /></div>
         	<div class="phil-merge-mobile float-left full-width">
 	        	<img src="/img/phil-merge.png" width="100%" height="auto">
         	</div>
@@ -324,7 +326,7 @@
         			<div class="full-width adjust">
         				<img src="/img/mail-ico.png" width="40" height="auto" class="float-left">
 						<div class="tablcell">
-							<a href="#">trustme@philcass.com</a>
+							<a href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#116;&#114;&#117;&#115;&#116;&#109;&#101;&#64;&#112;&#104;&#105;&#108;&#99;&#97;&#115;&#115;&#46;&#99;&#111;&#109;'>&#116;&#114;&#117;&#115;&#116;&#109;&#101;&#64;&#112;&#104;&#105;&#108;&#99;&#97;&#115;&#115;&#46;&#99;&#111;&#109;</a>
 	        			</div>
         			</div>
         			<div class="full-width adjust">
@@ -436,8 +438,8 @@
 				    controlNav: false,
 				    animationLoop: false,
 				    slideshow: false,
-				    itemWidth: 119,
-				    itemMargin: 1,
+				    itemWidth: 114,
+				    itemMargin: 8,
 				    asNavFor: '.photo-gal-slider',
 				});
         		
@@ -541,6 +543,69 @@
 				})
 				$('.js-theyear').html((new Date).getFullYear());	
         	});
+        	
+        	$(window).load(function(){
+        		$philHome = $('.js-phil-anim');
+				$philippaHome = $('.js-philippa-anim');
+				$duckHome = $('.js-duck-anim');
+				
+				$philHome.css('opacity',0).removeClass('hidden').css('opacity',1);
+				$philHome.find('img').css('top',600);
+				setTimeout(function(){
+					$philHome.find('img').css('top',0);
+				},200);
+				
+				setTimeout(function(){
+					$philippaHome.css('opacity',0).removeClass('hidden').css('opacity',1);
+					$philippaHome.find('img').css('top',600);
+						setTimeout(function(){
+							$philippaHome.find('img').css('top',0);
+							setTimeout(function(){
+								$duckHome.css('opacity',0).removeClass('hidden').css('opacity',1);
+								$duckHome.find('img').css('top',600);
+								setTimeout(function(){
+									$duckHome.find('img').css('top',0);
+								},100);
+							},100);
+						},100)
+				},200);
+				
+				
+				
+        	
+			parallaxElem = function() {
+		        //Store this in cache
+		    	var distScrolled;
+		    	$(window).scroll(function() {
+		    		//Calculate distance scrolled, convert to a ratio, animate by it
+		    		distScrolled = $(document).scrollTop();
+		    		$duckHome.find('img').css('top', distScrolled * +.10);
+		    		$philHome.find('img').css('top', distScrolled * +.25);
+		    		$philippaHome.find('img').css('top', distScrolled * +.30);
+		    		$('#awards').css('margin-top', distScrolled * -.10);
+		    		//$('#badge-sparkle-hero').css('margin-top', distScrolled * .2);
+		    		//Reset at the top
+		    		if (distScrolled == 0) {
+		    			$duckHome.find('img').stop().animate({
+		    				'margin-top': 0
+		    			}, 200, 'swing');
+		    			
+		    			$philHome.find('img').stop().animate({
+		    				'margin-top': 0
+		    			}, 200, 'swing');
+		    			
+		    			$philippaHome.find('img').stop().animate({
+		    				'margin-top': 0
+		    			}, 200, 'swing');
+		    		}
+		    	});
+		    };
+		    	
+			var isTouch = $('html').hasClass('touch');
+				if (!isTouch) {
+			    	parallaxElem();
+			    }
+			})//WL
         	
 
         </script>

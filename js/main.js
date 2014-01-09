@@ -59,12 +59,10 @@ var mainJs = (function($){
 				
 				var $activeTitle = $(this).attr('id');
 				
-				console.log($activeTitle);
+				console.log(event.currentTarget);
 				
 				var $activeElement = $('.js-main-nav li').find('a#'+$activeTitle+'-nav');
 				var $prevActive = $('.js-main-nav li').find('a.active');
-				
-				console.log($activeElement, direction);
 				
 				
 				if (direction === "up") {

@@ -183,6 +183,13 @@ iframe.video{
 		left: 50%;
 		display: block;
 		bottom: 0px;
+		overflow: hidden;
+		@include transAll();
+		img{
+			float: left;
+			position: relative;
+			@include transAll(1s);
+		}
 		&.phil{
 			margin-left: 60px;
 			z-index: 999;
@@ -205,9 +212,15 @@ iframe.video{
 .accolades{
 	min-height: 658px;
 	background: #252525 url(/img/stars.jpg) center center no-repeat;
+	z-index: 99999;
 	.accolades-gutter{
 		text-align: center;
 		@include centerContainer(980,200);
+	}
+	.video-mobile{
+		display: none;
+		visibility: hidden;
+		margin-top: 30px;
 	}
 	.awards{
 		width: 100%;
@@ -268,11 +281,6 @@ iframe.video{
 	}//awards
 	.media-bank{
 		margin-top: 60px;
-	}
-	.video-mobile{
-		display: none;
-		visibility: hidden;
-		margin-top: 30px;
 	}
 	.left-col{
 		float: left;
@@ -425,7 +433,7 @@ iframe.video{
 		margin: 35px 0px 0px 0px;
 		.flexslider{
 			margin-bottom: 10px;
-			border: 1px solid #fff;
+			border: 1px solid $gold;
 			max-height: 319px;
 			@include borderRadius(0px);
 			object{
@@ -440,32 +448,27 @@ iframe.video{
 			border: none !important;
 			background: transparent !important;
 			li{
-				margin-right: 4px;
+				margin-right: 10px;
 				cursor: pointer !important;
+				width: 112px !important;
 				img{
-					margin-top: 2px;
+					border: 1px solid #fff;
+					
 					&:hover{
 						opacity: .7;
 					}
 				}
 			}
 			.flex-active-slide{
-				border: 2px solid $gold;
+				
 				img{
-					margin-top: 0px;
+					border: 1px solid $gold;
 				}
 				 
 			}
 			.flex-direction-nav a{
-				width: 30px;
-				height: 30px;
-				font-size: 20px !important;
-				color: $gold !important;
-				margin-top: -10px !important;
-				opacity: 1 !important;
-				&:before{
-					font-size: 20px;
-				}
+				display: none; 
+				visibility: hidden; 
 			}
 		}
 		.flex-direction-nav a{
@@ -486,6 +489,10 @@ iframe.video{
 			left: -40px !important;
 		}
 	}
+	.video-mobile{
+		display: none;
+		visibility: hidden;
+	}
 }//photo gal
 
 .promo-showcase{
@@ -501,7 +508,7 @@ iframe.video{
 		left: -55px;
 	}
 	.right-col{
-		margin: 55px 0px 0px 0px;
+		margin: 94px 0px 0px 0px;
 		width: 420px;
 		float: right;
 		position: relative;
@@ -518,6 +525,7 @@ iframe.video{
 	background:#222222 url(/img/starring.jpg) 0px 0px repeat;
 	min-height: 514px;
 	.contact-gutter{
+		margin-top: 21px;
 		@include centerContainer(980,200);
 	}
 	.left-col{
@@ -619,7 +627,7 @@ iframe.video{
 				margin-left: 50px;
 				margin-top: 0px;
 				a{
-					margin: 20px -22px 0px 0px;
+					margin: 14px -22px 0px 0px;
 					@include borderLink();
 				}
 			}
@@ -629,7 +637,7 @@ iframe.video{
 
 .global-footer{
 	background: #000;
-	padding: 70px 0px 70px 0px;
+	padding: 40px 0px 40px 0px;
 	.footer-gutter{
 		color: #666666;
 		text-align: center;
@@ -637,7 +645,7 @@ iframe.video{
 		@include fontStack($opensans-regular, '"Myriad Pro", "Myriad", sans-serif', 200, normal,18px);
 		@include centerContainer(980,200);
 		a{
-			color: #666;
+			color: #999;
 			text-decoration: none;
 			@include transAll();
 			&:hover{
