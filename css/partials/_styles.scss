@@ -212,7 +212,7 @@ iframe.video{
 .accolades{
 	min-height: 658px;
 	background: #252525 url(/img/stars.jpg) center center no-repeat;
-	z-index: 99999;
+	z-index: 99;
 	.accolades-gutter{
 		text-align: center;
 		@include centerContainer(980,200);

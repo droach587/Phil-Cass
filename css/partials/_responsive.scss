@@ -4,6 +4,9 @@
 		visibility: hidden;
 		display: none !important;
 	}
+	iframe{
+		z-index: 2 !important;
+	}
 	.mobile-nav{
 		visibility: visible !important;
 		display: block !important;
@@ -20,7 +23,7 @@
 		padding: 5px 0px 5px 0px !important;
 		left: 0px;
 		top: 0px;
-		z-index: 99999;
+		z-index: 99999 !important;
 		.mobile-button{
 			background: #000;
 			padding-top: 6px;
@@ -47,10 +50,9 @@
 				float: left;
 				position: relative;
 				display: block;
-				padding: 5px 0px 5px 0px;
 				text-align: center;
 				font-size: 16px;
-				border-top: 1px solid darken(#bbb,50%);
+				border-top: 1px solid darken(#bbb,40%);
 				text-transform: uppercase;
 				@include fontStack($futura-bold, '"Futura Std Bold", "Futura Bold", "Futura", sans-serif', 200, normal,26px);
 				a{
@@ -59,6 +61,7 @@
 					text-align: center;
 					float: left;
 					position: relative;
+					padding: 10px 0px 10px 0px;
 				}
 			}
 		}
