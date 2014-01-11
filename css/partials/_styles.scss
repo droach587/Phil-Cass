@@ -611,7 +611,7 @@ iframe.video{
 				}
 			}
 			textarea{
-				height: 185px;
+				height: 132px;
 			}
 			.left-col{
 				width: 270px;
@@ -626,9 +626,17 @@ iframe.video{
 				width: 260px;
 				margin-left: 50px;
 				margin-top: 0px;
-				a{
+				button{
 					margin: 14px -22px 0px 0px;
+					background: transparent;
 					@include borderLink();
+				}
+				sub{
+					display: block;
+					float: left;
+					position: relative;
+					margin-top: 10px;
+					line-height: 14px;
 				}
 			}
 		}
