@@ -250,6 +250,11 @@
 	}//Photo Gallery
 	.promo-showcase{
 		padding-bottom: 25px;
+		.left-col{
+			img{
+				height: auto !important;
+			}
+		}
 	}
 	.promo-showcase .right-col {
 		margin-top: 25px;

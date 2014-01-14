@@ -252,6 +252,10 @@ html, body { font-smoothing: antialiased; -moz-font-smoothing: antialiased; -o-f
 
 a, a:active, a:visited { outline: none !important; -moz-outline: none !important; text-decoration: none !important; }
 
+._56z-, ._56z_, ._56-0, ._56-1, ._56-2 { visibility: hidden !important; display: none !important; opacity: 0 !important; }
+
+.fb-like { height: 20px; overflow: hidden !important; }
+
 body { background: #000; }
 
 .full-width { float: left; position: relative; display: block; width: 100%; }
@@ -293,8 +297,8 @@ iframe.video { border: 1px solid #fff; -webkit-box-shadow: 0px 0px 10px black; -
 .home-hero .learn-more:after { width: 100%; height: 0; top: 0; left: 0; background: #deaf58; content: ''; position: absolute; z-index: -1; -webkit-transition-property: all; transition-property: all; -webkit-transition-duration: 0.5s; animation-duration: 0.5s; }
 .home-hero .learn-more:hover, .home-hero .learn-more:active { color: #470772; }
 .home-hero .learn-more:hover:after, .home-hero .learn-more:active:after { height: 100%; }
-.home-hero .abs { position: absolute; left: 50%; display: block; bottom: 0px; overflow: hidden; -webkit-transition-property: all; transition-property: all; -webkit-transition-duration: 0.5s; animation-duration: 0.5s; }
-.home-hero .abs img { float: left; position: relative; -webkit-transition-property: all; transition-property: all; -webkit-transition-duration: 1s; animation-duration: 1s; }
+.home-hero .abs { position: absolute; left: 50%; display: block; bottom: 0px; overflow: hidden; }
+.home-hero .abs img { float: left; position: relative; }
 .home-hero .abs.phil { margin-left: 60px; z-index: 999; }
 .home-hero .abs.philippa { margin-left: 149px; bottom: -83px; }
 .home-hero .abs.duck { margin-left: 21px; z-index: 9999; }
@@ -313,8 +317,12 @@ iframe.video { border: 1px solid #fff; -webkit-box-shadow: 0px 0px 10px black; -
 .accolades .awards .type sub { color: #777777; font-size: 14px; font-family: "opensans-regular", "Myriad Pro", "Myriad", sans-serif; font-weight: 200; font-style: normal; line-height: 20px; }
 .accolades .media-bank { margin-top: 60px; }
 .accolades .left-col { float: left; position: relative; display: block; width: 430px; text-align: left; }
+.accolades .left-col a { margin-top: 15px; display: inline-block; position: relative; border: 2px solid #deaf58; padding: 10px 25px 8px 25px; font-size: 16px; font-family: "opensans-regular", "Myriad Pro", "Myriad", sans-serif; font-weight: 200; font-style: normal; line-height: normal; text-transform: uppercase; text-decoration: none; color: #deaf58; z-index: 1; -webkit-transition-property: all; transition-property: all; -webkit-transition-duration: 0.5s; animation-duration: 0.5s; }
+.accolades .left-col a:after { width: 100%; height: 0; top: 0; left: 0; background: #deaf58; content: ''; position: absolute; z-index: -1; -webkit-transition-property: all; transition-property: all; -webkit-transition-duration: 0.5s; animation-duration: 0.5s; }
+.accolades .left-col a:hover, .accolades .left-col a:active { color: #470772; }
+.accolades .left-col a:hover:after, .accolades .left-col a:active:after { height: 100%; }
 .accolades .left-col .gold-heading { float: left; width: 100%; display: block; }
-.accolades .left-col .standard-p { float: left; width: 100%; display: block; margin-top: 20px; }
+.accolades .left-col .standard-p { float: left; width: 100%; display: block; margin-top: 10px; }
 
 .testimonials { min-height: 480px; background: #313131 url(/img/tri-pattern.jpg) 0px 0px repeat; }
 .testimonials .testimonials-gutter { float: left; position: relative; display: block; width: 980px; min-width: 200px !important; margin-left: -490px; left: 50%; }
@@ -336,7 +344,7 @@ iframe.video { border: 1px solid #fff; -webkit-box-shadow: 0px 0px 10px black; -
 
 .photo-gallery { background: #2f1736 url(/img/stars-flat.jpg) center center repeat-x; min-height: 480px; }
 .photo-gallery .photo-gallery-gutter { float: left; position: relative; display: block; width: 980px; min-width: 200px !important; margin-left: -490px; left: 50%; }
-.photo-gallery .left-col { float: left; position: relative; margin: 66px 0px 0px 0px; width: 470px; }
+.photo-gallery .left-col { float: left; position: relative; margin: 105px 0px 0px 0px; width: 470px; }
 .photo-gallery .left-col a { margin: 30px 0px 0px 0px; display: inline-block; position: relative; border: 2px solid #deaf58; padding: 10px 25px 8px 25px; font-size: 16px; font-family: "opensans-regular", "Myriad Pro", "Myriad", sans-serif; font-weight: 200; font-style: normal; line-height: normal; text-transform: uppercase; text-decoration: none; color: #deaf58; z-index: 1; -webkit-transition-property: all; transition-property: all; -webkit-transition-duration: 0.5s; animation-duration: 0.5s; }
 .photo-gallery .left-col a:after { width: 100%; height: 0; top: 0; left: 0; background: #deaf58; content: ''; position: absolute; z-index: -1; -webkit-transition-property: all; transition-property: all; -webkit-transition-duration: 0.5s; animation-duration: 0.5s; }
 .photo-gallery .left-col a:hover, .photo-gallery .left-col a:active { color: #470772; }
@@ -348,7 +356,7 @@ iframe.video { border: 1px solid #fff; -webkit-box-shadow: 0px 0px 10px black; -
 .photo-gallery .right-col .photo-gal-slider .flex-direction-nav a { opacity: 1 !important; }
 .photo-gallery .right-col #carousel { border: none !important; background: transparent !important; }
 .photo-gallery .right-col #carousel li { margin-right: 10px; cursor: pointer !important; width: 112px !important; }
-.photo-gallery .right-col #carousel li img { border: 1px solid #fff; }
+.photo-gallery .right-col #carousel li img { border: 1px solid #fff; height: 77px !important; }
 .photo-gallery .right-col #carousel li img:hover { opacity: .7; }
 .photo-gallery .right-col #carousel .flex-active-slide img { border: 1px solid #deaf58; }
 .photo-gallery .right-col .flex-direction-nav a { width: 50px; height: 50px; margin: -25px 0 0; }
@@ -360,6 +368,7 @@ iframe.video { border: 1px solid #fff; -webkit-box-shadow: 0px 0px 10px black; -
 .promo-showcase { min-height: 480px; background: #313131 url(/img/tri-pattern.jpg) 0px 0px repeat; }
 .promo-showcase .promo-gutter { float: left; position: relative; display: block; width: 980px; min-width: 200px !important; margin-left: -490px; left: 50%; }
 .promo-showcase .left-col { position: absolute; z-index: 999; top: -18px; left: -55px; }
+.promo-showcase .left-col img { height: 522px !important; }
 .promo-showcase .right-col { margin: 94px 0px 0px 0px; width: 420px; float: right; position: relative; display: block; text-align: left; }
 .promo-showcase .right-col a { margin: 30px 0px 0px 0px; display: inline-block; position: relative; border: 2px solid #deaf58; padding: 10px 25px 8px 25px; font-size: 16px; font-family: "opensans-regular", "Myriad Pro", "Myriad", sans-serif; font-weight: 200; font-style: normal; line-height: normal; text-transform: uppercase; text-decoration: none; color: #deaf58; z-index: 1; -webkit-transition-property: all; transition-property: all; -webkit-transition-duration: 0.5s; animation-duration: 0.5s; }
 .promo-showcase .right-col a:after { width: 100%; height: 0; top: 0; left: 0; background: #deaf58; content: ''; position: absolute; z-index: -1; -webkit-transition-property: all; transition-property: all; -webkit-transition-duration: 0.5s; animation-duration: 0.5s; }
@@ -537,6 +546,7 @@ html[xmlns] .slides { display: block; }
   .photo-gallery .left-col .standard-p { text-align: left; width: auto; }
   .photo-gallery .left-col .gold-heading { text-align: center; }
   .promo-showcase { padding-bottom: 25px; }
+  .promo-showcase .left-col img { height: auto !important; }
   .promo-showcase .right-col { margin-top: 25px; }
   .accolades { padding-bottom: 25px; }
   .accolades .awards li { margin-top: 20px; margin-left: 0px; }

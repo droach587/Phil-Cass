@@ -11,6 +11,17 @@ a, a:active, a:visited{
 	text-decoration: none !important;
 }
 
+._56z-, ._56z_, ._56-0, ._56-1, ._56-2{
+	visibility: hidden !important;
+	display: none !important;
+	opacity: 0 !important;
+}
+
+.fb-like{
+	height: 20px;
+	overflow: hidden !important;
+}
+
 body{ 
 	background: #000;
 }
@@ -185,11 +196,9 @@ iframe.video{
 		display: block;
 		bottom: 0px;
 		overflow: hidden;
-		@include transAll();
 		img{
 			float: left;
 			position: relative;
-			@include transAll(1s);
 		}
 		&.phil{
 			margin-left: 60px;
@@ -289,6 +298,10 @@ iframe.video{
 		display: block;
 		width: 430px;
 		text-align: left;
+		a{
+			margin-top: 15px;
+			@include borderLink();
+		}
 		.gold-heading{
 			float: left;
 			width: 100%;
@@ -298,7 +311,7 @@ iframe.video{
 			float: left;
 			width: 100%;
 			display: block;
-			margin-top: 20px;
+			margin-top: 10px;
 		}
 
 	}
@@ -418,7 +431,7 @@ iframe.video{
 	.left-col{
 		float: left;
 		position: relative;
-		margin: 66px 0px 0px 0px;
+		margin: 105px 0px 0px 0px;
 		width: 470px;
 		a{
 			margin: 30px 0px 0px 0px;
@@ -459,7 +472,7 @@ iframe.video{
 				width: 112px !important;
 				img{
 					border: 1px solid #fff;
-					
+					height: 77px !important;
 					&:hover{
 						opacity: .7;
 					}
@@ -507,6 +520,9 @@ iframe.video{
 		z-index: 999;
 		top: -18px;
 		left: -55px;
+		img{
+			height: 522px !important;
+		}
 	}
 	.right-col{
 		margin: 94px 0px 0px 0px;
@@ -663,7 +679,6 @@ iframe.video{
 		}
 	}
 }
-
 
 
 
